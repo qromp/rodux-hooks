@@ -1,8 +1,9 @@
-local Context = require(script.Parent.Context)
+local RoactRodux = require(script.Parent.Parent.RoactRodux)
+
 local useCustomDispatch = require(script.Parent.useCustomDispatch)
 
 local function useDispatch(hooks)
-    return useCustomDispatch(hooks, Context)
+	return useCustomDispatch(hooks, RoactRodux.StoreContext)
 end
 
 return useDispatch

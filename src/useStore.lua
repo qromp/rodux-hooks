@@ -1,7 +1,7 @@
-local Context = require(script.Parent.Context)
+local RoactRodux = require(script.Parent.Parent.RoactRodux)
 
 local function useStore(hooks)
-    return hooks.useContext(Context)
+	return hooks.useContext(RoactRodux.StoreContext)
 end
 
 return useStore

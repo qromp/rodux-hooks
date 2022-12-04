@@ -1,4 +1,5 @@
-local Context = require(script.Parent.Context)
+local RoactRodux = require(script.Parent.Parent.RoactRodux)
+
 local useCustomSelector = require(script.Parent.useCustomSelector)
 
 local function useSelector(
@@ -6,7 +7,7 @@ local function useSelector(
 	selector: (state: table) -> any,
 	equalityFn: ((newState: table, oldState: table) -> boolean)?
 )
-	return useCustomSelector(hooks, selector, equalityFn, Context)
+	return useCustomSelector(hooks, selector, equalityFn, RoactRodux.StoreContext)
 end
 
 return useSelector
