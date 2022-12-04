@@ -7,11 +7,10 @@ local useCustomSelector = require(script.useCustomSelector)
 local shallowEqual = require(script.shallowEqual)
 
 return {
-    Provider = Provider,
-    useDispatch = useDispatch,
-    useSelector = useSelector,
-    useStore = useStore,
-    useCustomDispatch = useCustomDispatch,
-    useCustomSelector = useCustomSelector,
-    shallowEqual = shallowEqual,
+	useDispatch = useDispatch,
+	useSelector = useSelector,
+	useStore = useStore,
+	useCustomDispatch = useCustomDispatch,
+	useCustomSelector = useCustomSelector,
+	shallowEqual = shallowEqual,
 }
