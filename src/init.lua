@@ -1,4 +1,3 @@
-local Provider = require(script.Provider)
 local useDispatch = require(script.useDispatch)
 local useSelector = require(script.useSelector)
 local useStore = require(script.useStore)
