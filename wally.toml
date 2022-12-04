@@ -8,5 +8,5 @@ realm = "shared"
 license = "MIT"
 
 [dependencies]
-Roact = "roblox/roact@1.4.0"
+Roact = "roblox/roact@1.4.4"
 RoactRodux = "roblox/roact-rodux@0.5.1"
